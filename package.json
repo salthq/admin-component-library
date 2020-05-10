@@ -17,6 +17,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "cssnano": "^4.1.10",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
