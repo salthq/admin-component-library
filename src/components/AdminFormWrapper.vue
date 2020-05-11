@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import AdminButton from '@/components/AdminButton'
+import AdminButton from '@bit/advantagelearn.admin-component-library.admin-button'
 
 export default {
   name: 'admin-form-wrapper',

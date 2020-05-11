@@ -18,7 +18,7 @@
 <script>
 import MultiSelect from 'vue-multiselect'
 
-import AdminFormItemWrapper from '@/components/AdminFormItemWrapper'
+import AdminFormItemWrapper from '@bit/advantagelearn.admin-component-library.admin-form-item-wrapper'
 
 export default {
   components: {

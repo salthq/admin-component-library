@@ -10,7 +10,12 @@
       <span v-if="required" class="text-red-500 text-sm">*</span>
     </label>
     <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <slot></slot>
+      <slot
+        ><input
+          :id="inputID"
+          :name="inputID"
+          class="block w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 sm:text-sm sm:leading-5 transition duration-150 ease-in-out"
+      /></slot>
     </div>
   </div>
 </template>

@@ -11,6 +11,8 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.0",
+    "@bit/advantagelearn.admin-component-library.admin-form-item-wrapper": "^1.0.0",
     "core-js": "^3.6.4",
     "tailwindcss": "^1.4.5",
     "vue": "^2.6.11",
@@ -44,6 +46,11 @@
       "compiler": "bit.envs/compilers/vue@0.1.4"
     },
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "resolveModules": {
+      "aliases": {
+        "@": "src"
+      }
+    }
   }
 }
