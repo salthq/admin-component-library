@@ -1,34 +1,32 @@
 <template>
-  <div
-    class="sm:grid sm:grid-cols-3 sm:gap-4 border-t border-gray-200 sm:items-start sm:pt-5"
+  <admin-form-item-wrapper
+    :inputID="inputID"
+    :label="label"
+    :required="required"
   >
-    <label
-      :for="inputID"
-      class="block text-sm font-medium leading-5 text-gray-700 sm:mt-px sm:pt-2 my-6"
-    >
-      {{ label }}:
-      <span v-if="required" class="text-red-500 text-sm">*</span>
-    </label>
-    <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <div class="max-w-xs rounded-md shadow-sm">
-        <input
-          :id="inputID"
-          :name="inputID"
-          :required="required"
-          :readonly="readonly"
-          :type="type ? type : 'text'"
-          :value="value"
-          @input="$emit('input', $event.target.value)"
-          class="block w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 sm:text-sm sm:leading-5 transition duration-150 ease-in-out"
-        />
-      </div>
+    <div class="max-w-xs rounded-md shadow-sm">
+      <input
+        :id="inputID"
+        :name="inputID"
+        :required="required"
+        :readonly="readonly"
+        :type="type ? type : 'text'"
+        :value="value"
+        @input="$emit('input', $event.target.value)"
+        class="block w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 sm:text-sm sm:leading-5 transition duration-150 ease-in-out"
+      />
     </div>
-  </div>
+  </admin-form-item-wrapper>
 </template>
 
 <script>
+import AdminFormItemWrapper from '@/components/AdminFormItemWrapper'
+
 export default {
   name: 'admin-form-input',
+  components: {
+    AdminFormItemWrapper
+  },
   props: {
     inputID: {
       type: String,

@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import AdminFormInput from '@/components/AdminFormInput.vue'
 
 let wrapper
@@ -8,7 +8,7 @@ const inputID = 'first_name'
 const value = 'first_name'
 
 beforeEach(() => {
-  wrapper = shallowMount(AdminFormInput, {
+  wrapper = mount(AdminFormInput, {
     propsData: { label, inputID, value }
   })
 })
@@ -31,7 +31,7 @@ describe('AdminFormInput.vue', () => {
   })
 
   test('The required span is shown when props.required is set to true', () => {
-    const wrapper = shallowMount(AdminFormInput, {
+    const wrapper = mount(AdminFormInput, {
       propsData: {
         label,
         inputID,
@@ -46,7 +46,7 @@ describe('AdminFormInput.vue', () => {
   })
 
   test('The input field is readonly when props.readonly is set to true', () => {
-    const wrapper = shallowMount(AdminFormInput, {
+    const wrapper = mount(AdminFormInput, {
       propsData: {
         label,
         inputID,
