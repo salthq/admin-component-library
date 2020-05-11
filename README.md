@@ -1,5 +1,7 @@
 # vue-admin-components
 
+![Unit Tests](https://github.com/pango-studio/admin-component-library/workflows/Unit%20Tests/badge.svg?branch=master)
+
 ## Project setup
 ```
 npm install
