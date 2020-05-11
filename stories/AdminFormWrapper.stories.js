@@ -7,8 +7,9 @@ import AdminFormWrapper from '@/components/AdminFormWrapper'
 
 import AdminButton from '@/components/AdminButton'
 import AdminFormInput from '@/components/AdminFormInput'
-import AdminFormSectionTitle from "@/components/AdminFormSectionTitle"
-import AdminFormTextArea from "@/components/AdminFormTextArea"
+import AdminFormSectionTitle from '@/components/AdminFormSectionTitle'
+import AdminFormTextArea from '@/components/AdminFormTextArea'
+import AdminFormSelect from '@/components/AdminFormSelect'
 
 const padding = () => {
   return {
@@ -22,6 +23,18 @@ export default {
   decorators: [padding]
 }
 
+const options = [
+  'Eastern Cape',
+  'Free State',
+  'Gauteng',
+  'KwaZulu-Natal',
+  'Limpopo',
+  'Mpumalanaga',
+  'North West Province',
+  'Northern Cape',
+  'Western Cape'
+]
+
 const defaultFormWrapper = `<admin-form-wrapper />`
 
 const withContentFormWrapper = `
@@ -32,19 +45,40 @@ const withContentFormWrapper = `
       <admin-form-input inputID="last_name" label="Last name" value="" />
       <admin-form-input inputID="Email Address" label="Email Address" :required="true" value="" type="email" />
       <admin-form-text-area inputID="about" label="About" :required="true" value=""  />
-    </template>
-    <template v-slot:form-actions>
-        <admin-button title="Save" />
+      <admin-form-select inputID="province" label="Province" :options="options" :required="true"  />
+
     </template>
 </admin-form-wrapper>
 `
 
+const withActionsFormWrapper = `
+<admin-form-wrapper>
+   <template v-slot:form-actions>
+    <admin-button title="Cancel" type="white" />
+    <admin-button title="Delete" type="danger" />
+   </template>
+</admin-form-wrapper>
+`
 export const Default = () => ({
   components: { AdminFormWrapper },
   template: defaultFormWrapper
 })
 
 export const WithContent = () => ({
-  components: { AdminFormWrapper, AdminButton, AdminFormInput, AdminFormSectionTitle, AdminFormTextArea },
-  template: withContentFormWrapper
+  components: {
+    AdminFormWrapper,
+    AdminFormInput,
+    AdminFormSelect,
+    AdminFormSectionTitle,
+    AdminFormTextArea
+  },
+  template: withContentFormWrapper,
+  props: {
+    options: { default: () => options }
+  }
+})
+
+export const WithActions = () => ({
+  components: { AdminFormWrapper, AdminButton },
+  template: withActionsFormWrapper
 })
