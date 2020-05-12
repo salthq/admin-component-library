@@ -1,22 +1,12 @@
-import '@/style/tailwind.css'
-
 import AdminFormInput from '@/components/AdminFormInput'
 import AdminFormWrapper from '@/components/AdminFormWrapper'
 
-const padding = () => {
-  return {
-    template: '<div style="padding: 1rem;"><story/></div>'
-  }
-}
-
 export default {
   title: 'Form/Input',
-  component: AdminFormInput,
-  decorators: [padding]
+  component: AdminFormInput
 }
 
-const defaultTemplate = 
-`<admin-form-wrapper>
+const defaultTemplate = `<admin-form-wrapper>
     <template v-slot:form-content>  
         <admin-form-input inputID="first_name" label="First Name" :required="true" value=""  />
     </template>

@@ -1,8 +1,3 @@
-// import { action } from '@storybook/addon-actions'
-// import { linkTo } from '@storybook/addon-links'
-
-import '@/style/tailwind.css'
-
 import AdminFormWrapper from '@/components/AdminFormWrapper'
 
 import AdminButton from '@/components/AdminButton'
@@ -10,17 +5,9 @@ import AdminFormInput from '@/components/AdminFormInput'
 import AdminFormSectionTitle from '@/components/AdminFormSectionTitle'
 import AdminFormTextArea from '@/components/AdminFormTextArea'
 import AdminFormSelect from '@/components/AdminFormSelect'
-
-const padding = () => {
-  return {
-    template: '<div style="padding: 1rem;"><story/></div>'
-  }
-}
-
 export default {
   title: 'Form/Form Wrapper',
-  component: AdminFormWrapper,
-  decorators: [padding]
+  component: AdminFormWrapper
 }
 
 const options = [

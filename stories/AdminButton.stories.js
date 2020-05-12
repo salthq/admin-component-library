@@ -1,20 +1,8 @@
-// import { action } from '@storybook/addon-actions'
-// import { linkTo } from '@storybook/addon-links'
-
-import '@/style/tailwind.css'
-
 import AdminButton from '@/components/AdminButton'
-
-const padding = () => {
-  return {
-    template: '<div style="padding: 1rem;"><story/></div>'
-  }
-}
 
 export default {
   title: 'Button',
-  component: AdminButton,
-  decorators: [padding]
+  component: AdminButton
 }
 
 export const Primary = () => ({
