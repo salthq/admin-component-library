@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 let store = new Vuex.Store({
   state: {
-    activeModal: 'example-modal'
+    activeModal: ''
   },
   actions: {
     setActiveModal({ commit }, modalID) {

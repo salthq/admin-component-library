@@ -90,5 +90,39 @@
         "origin": "AUTHORED",
         "exported": true
     },
+    "advantagelearn.admin-component-library/admin-modal-toggle@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/components/AdminModalToggle.vue",
+                "test": false,
+                "name": "AdminModalToggle.vue"
+            },
+            {
+                "relativePath": "tests/unit/AdminModalToggle.spec.js",
+                "test": true,
+                "name": "AdminModalToggle.spec.js"
+            }
+        ],
+        "mainFile": "src/components/AdminModalToggle.vue",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "advantagelearn.admin-component-library/admin-modal@1.0.0": {
+        "files": [
+            {
+                "relativePath": "src/components/AdminModal.vue",
+                "test": false,
+                "name": "AdminModal.vue"
+            },
+            {
+                "relativePath": "tests/unit/AdminModal.spec.js",
+                "test": true,
+                "name": "AdminModal.spec.js"
+            }
+        ],
+        "mainFile": "src/components/AdminModal.vue",
+        "origin": "AUTHORED",
+        "exported": true
+    },
     "version": "14.7.6"
 }
