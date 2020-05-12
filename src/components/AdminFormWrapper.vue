@@ -1,6 +1,6 @@
 <template>
   <form
-    class="bg-white border border-gray-200 rounded shadow-lg max-w-2xl"
+    class="bg-white shadow sm:rounded-md sm:overflow-hidden"
     @submit.prevent="submit"
   >
     <div class="mx-auto py-12 px-4 sm:px-6 lg:px-8">
