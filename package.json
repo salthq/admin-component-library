@@ -14,7 +14,8 @@
     "core-js": "^3.6.4",
     "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
-    "vue-multiselect": "^2.1.6"
+    "vue-multiselect": "^2.1.6",
+    "vuex": "^3.4.0"
   },
   "devDependencies": {
     "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.3",
