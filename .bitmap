@@ -6,12 +6,13 @@
             {
                 "name": "AdminButton.vue",
                 "relativePath": "src/components/AdminButton.vue",
-                "test": false
+                "test": false,
+                "name": "AdminButton.vue"
             },
             {
-                "name": "AdminButton.spec.js",
                 "relativePath": "tests/unit/AdminButton.spec.js",
-                "test": true
+                "test": true,
+                "name": "AdminButton.spec.js"
             }
         ],
         "mainFile": "src/components/AdminButton.vue",
