@@ -4,7 +4,11 @@
     v-show="activeModal === id"
     class="fixed bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center z-10"
   >
-    <div class="fixed inset-0 transition-opacity" @click="closeModal">
+    <div
+      id="overlay"
+      class="fixed inset-0 transition-opacity"
+      @click="closeModal"
+    >
       <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
     </div>
 
