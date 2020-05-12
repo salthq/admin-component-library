@@ -12,13 +12,13 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "tailwindcss": "^1.4.5",
+    "tailwindcss": "^1.4.6",
     "vue": "^2.6.11",
     "vue-multiselect": "^2.1.6"
   },
   "devDependencies": {
-    "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.0",
-    "@bit/advantagelearn.admin-component-library.admin-form-item-wrapper": "^1.0.0",
+    "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.3",
+    "@bit/advantagelearn.admin-component-library.admin-form-item-wrapper": "^1.0.3",
     "@babel/core": "^7.9.6",
     "cssnano": "^4.1.10",
     "@fullhuman/postcss-purgecss": "^2.1.2",
