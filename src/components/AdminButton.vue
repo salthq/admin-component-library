@@ -2,7 +2,7 @@
   <span class="inline-flex rounded-md shadow-sm">
     <button
       type="submit"
-      class="inline-flex justify-center py-2 px-4 border text-sm leading-5 font-medium rounded-md  transition duration-150 ease-in-out"
+      class="inline-flex items-center justify-center py-2 px-4 border text-sm leading-5 font-medium rounded-md  transition duration-150 ease-in-out"
       :class="{
         'text-white border-transparent bg-blue-600 hover:bg-blue-500 focus:ouline-none focus:border-blue-700 focus:shadow-ouline-blue active:bg-blue-700':
           type == 'primary',
@@ -14,6 +14,7 @@
           type == 'danger'
       }"
     >
+      <slot name="icon" class="w-12 h-12"></slot>
       {{ title }}
     </button>
   </span>
