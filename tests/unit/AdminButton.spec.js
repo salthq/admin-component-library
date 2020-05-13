@@ -1,6 +1,5 @@
 import { shallowMount, mount } from '@vue/test-utils'
 import AdminButton from '@/components/AdminButton.vue'
-import AdminIcon from '@/components/AdminIcon.vue';
 
 let wrapper
 
@@ -61,8 +60,7 @@ describe('AdminButton.vue', () => {
 
   it('renders content when using the icon slot', () => {
     const wrapper = mount(AdminButton, {
-      components: {AdminIcon},
-      propsData: { title, type: 'danger' },
+      propsData: { title },
       slots: {
         icon: '<span class="text-white"><svg></svg></span>'
       }
