@@ -40,5 +40,11 @@ describe('AdminIcon.vue', () => {
 
         expect(svg.attributes('viewBox')).toEqual(`${viewBox}`)
     })
+
+    it('renders a path element with an class equal to props.icon + "-path"', () => {
+        const pathClass = wrapper.find(`.${icon}-path`);
+
+        expect(pathClass.exists()).toBe(true);
+    })
 })
 
