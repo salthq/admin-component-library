@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.3",
+    "@bit/advantagelearn.admin-component-library.admin-button": "^1.0.5",
     "@bit/advantagelearn.admin-component-library.admin-form-item-wrapper": "^1.0.3",
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "@storybook/addon-actions": "^5.3.18",
