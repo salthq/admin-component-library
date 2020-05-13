@@ -17,10 +17,10 @@ beforeEach(() => {
 afterEach(() => wrapper.destroy)
 
 describe('AdminIcon.vue', () => {
-    it('renders an svg with an ID equal to props.icon', () => {
-        const svgID = wrapper.find(`#${icon}`);
+    it('renders an svg with a class equal to props.icon', () => {
+        const svgClass = wrapper.find(`.${icon}`);
 
-        expect(svgID.exists()).toBe(true)
+        expect(svgClass.exists()).toBe(true)
     })
 
     it('renders an svg with a width equal to props.size', () => {
