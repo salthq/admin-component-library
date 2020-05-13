@@ -14,7 +14,7 @@
           type == 'danger'
       }"
     >
-      <slot name="icon" class="w-12 h-12"></slot>
+      <slot name="icon"></slot>
       {{ title }}
     </button>
   </span>
