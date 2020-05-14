@@ -26,7 +26,7 @@ const defaultFormWrapper = `<admin-form-wrapper />`
 
 const withContentFormWrapper = `
 <admin-form-wrapper>
-    <template v-slot:form-content>
+    <template v-slot:content>
       <admin-form-section-title title="Personal Information" />
       <admin-form-input inputID="first_name" label="First Name" :required="true" value="" />
       <admin-form-input inputID="last_name" label="Last name" value="" />
@@ -40,7 +40,7 @@ const withContentFormWrapper = `
 
 const withActionsFormWrapper = `
 <admin-form-wrapper>
-   <template v-slot:form-actions>
+   <template v-slot:actions>
     <admin-button title="Cancel" type="white" />
     <admin-button title="Delete" type="danger" />
    </template>

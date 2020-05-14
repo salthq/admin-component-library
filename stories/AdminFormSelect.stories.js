@@ -19,7 +19,7 @@ const options = [
 ]
 
 const defaultTemplate = `<admin-form-wrapper>
-    <template v-slot:form-content>  
+    <template v-slot:content>  
         <admin-form-select inputID="province" label="Province" :options="options" :required="true"  />
     </template>
 </admin-form-wrapper>`

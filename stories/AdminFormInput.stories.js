@@ -7,7 +7,7 @@ export default {
 }
 
 const defaultTemplate = `<admin-form-wrapper>
-    <template v-slot:form-content>  
+    <template v-slot:content>  
         <admin-form-input inputID="first_name" label="First Name" :required="true" value=""  />
     </template>
 </admin-form-wrapper>`
