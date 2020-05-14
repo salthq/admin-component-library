@@ -7,16 +7,10 @@
           <div class="relative flex items-center ">
             <input
               type="search"
-              class="searchBox h-10 px-5 w-64 rounded-md shadow pr-24"
+              class="searchBox h-10 px-5 w-64 rounded-md shadow"
               v-model="searchString"
               placeholder="Search..."
             />
-            <span
-              v-show="searchString"
-              @click="searchString = ''"
-              class="absolute right-0 mr-2 text-red-500 cursor-pointer transition duration-100 ease-in-out"
-              >X</span
-            >
           </div>
         </slot>
       </div>
