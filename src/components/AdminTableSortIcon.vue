@@ -22,9 +22,18 @@
 <script>
 export default {
   props: {
-    colKey: String,
-    currentSort: String,
-    currentSortDir: String
+    colKey: {
+      type: String,
+      required: true
+    },
+    currentSort: {
+      type: String,
+      required: true
+    },
+    currentSortDir: {
+      type: String,
+      required: true
+    }
   },
 
   computed: {
