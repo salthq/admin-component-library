@@ -1,21 +1,24 @@
 <template>
   <div class="flex flex-col">
     <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 ">
+      {{ currentSortDir }}
       <div class="flex py-4 justify-end" v-if="searchEnabled">
-        <div class="relative flex items-center ">
-          <input
-            type="search"
-            class="form-control h-10 px-5 w-64 rounded-md shadow pr-24"
-            v-model="searchString"
-            placeholder="Search..."
-          />
-          <span
-            v-show="searchString"
-            @click="searchString = ''"
-            class="absolute right-0 mr-2 text-red-500 cursor-pointer transition duration-100 ease-in-out"
-            >X</span
-          >
-        </div>
+        <slot name="search">
+          <div class="relative flex items-center ">
+            <input
+              type="search"
+              class="searchBox h-10 px-5 w-64 rounded-md shadow pr-24"
+              v-model="searchString"
+              placeholder="Search..."
+            />
+            <span
+              v-show="searchString"
+              @click="searchString = ''"
+              class="absolute right-0 mr-2 text-red-500 cursor-pointer transition duration-100 ease-in-out"
+              >X</span
+            >
+          </div>
+        </slot>
       </div>
       <div
         class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg"
