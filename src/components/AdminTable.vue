@@ -2,13 +2,20 @@
   <div class="flex flex-col">
     <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 ">
       <div class="flex py-4 justify-end" v-if="searchEnabled">
-        <input
-          type="search"
-          class="form-control h-10 px-5 w-64 rounded-md shadow"
-          @input="isTyping = true"
-          v-model="searchString"
-          placeholder="Search..."
-        />
+        <div class="relative flex items-center ">
+          <input
+            type="search"
+            class="form-control h-10 px-5 w-64 rounded-md shadow pr-24"
+            v-model="searchString"
+            placeholder="Search..."
+          />
+          <span
+            v-show="searchString"
+            @click="searchString = ''"
+            class="absolute right-0 mr-2 text-red-500 cursor-pointer transition duration-100 ease-in-out"
+            >X</span
+          >
+        </div>
       </div>
       <div
         class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg"
@@ -67,7 +74,6 @@
 
 <script>
 import AdminTableSortIcon from '@/components/AdminTableSortIcon'
-import _ from 'lodash'
 
 export default {
   name: 'admin-table',
@@ -107,7 +113,6 @@ export default {
       currentPage: 1,
       currentSort: '',
       currentSortDir: '',
-      isTyping: false,
       searchString: ''
     }
   },
@@ -123,6 +128,7 @@ export default {
       if (s === this.currentSort) {
         this.currentSortDir = this.currentSortDir === 'asc' ? 'desc' : 'asc'
       }
+      this.currentSort = s
     }
   },
   mounted() {
