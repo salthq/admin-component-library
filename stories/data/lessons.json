@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Revising the basics of differentiation",
+    "id": "les001",
+    "duration": 2
+  },
+  {
+    "title": "Differentiating using the chain rule - Part 1 of 2",
+    "id": "les002",
+    "duration": 12
+  },
+  {
+    "title": "Differentiating using the chain rule - Part 2 of 2",
+    "id": "les003",
+    "duration": 5
+  },
+
+  {
+    "title": "Differentiating using the chain rule - Practice exercise",
+    "id": "les004",
+    "duration": 2
+  },
+  {
+    "title": "Differentiating using the product rule",
+    "id": "les005",
+    "duration": 7
+  },
+  {
+    "title": "Differentiating using the quotient rule",
+    "id": "les006",
+    "duration": 13
+  }
+]
