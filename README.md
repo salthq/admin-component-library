@@ -1,6 +1,15 @@
 # vue-admin-components
 
-![Unit Tests](https://github.com/pango-studio/admin-component-library/workflows/Unit%20Tests/badge.svg?branch=master)
+<p>
+    <a href="#" alt="Unit Tests">
+        <img src="https://github.com/pango-studio/admin-component-library/workflows/Unit%20Tests/badge.svg?branch=master" />
+    </a>
+  
+  <a href="https://app.netlify.com/sites/avl-admin-components/deploys" alt="Netlify">
+        <img src="https://api.netlify.com/api/v1/badges/7e4eeecc-6b43-41c7-acc0-755a8f6db21b/deploy-status" />
+    </a>
+</p>
+
 
 ## Project setup
 ```
