@@ -1,7 +1,7 @@
 <template>
   <admin-form-item-wrapper inputID="file_upload" label="File Upload">
     <div
-      class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"
+      class="mt-2 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md hover:border-gray-500"
     >
       <div class="text-center">
         <svg
@@ -17,18 +17,17 @@
             stroke-linejoin="round"
           />
         </svg>
-        <p class="mt-1 text-sm text-gray-600">
-          <button
-            type="button"
-            class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition duration-150 ease-in-out"
+        <label class="block mt-1 text-sm text-gray-600" for="myfile">
+          <span
+            class="cursor-pointer font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition duration-150 ease-in-out"
+            >Upload a file</span
           >
-            Upload a file
-          </button>
           or drag and drop
-        </p>
-        <p class="mt-1 text-xs text-gray-500">
-          PNG, JPG, GIF up to 10MB
-        </p>
+          <p class="mt-1 text-xs text-gray-500">
+            PNG, JPG, GIF up to 10MB
+          </p>
+        </label>
+        <input hidden type="file" id="myfile" name="myfile" />
       </div>
     </div>
   </admin-form-item-wrapper>
