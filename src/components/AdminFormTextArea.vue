@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import AdminFormItemWrapper from '@bit/advantagelearn.admin-component-library.admin-form-item-wrapper'
+import AdminFormItemWrapper from '@/components/AdminFormItemWrapper'
 
 export default {
   name: 'admin-form-text-area',

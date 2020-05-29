@@ -4,7 +4,7 @@
     :label="label"
     :required="required"
   >
-    <div class="max-w-xs rounded-md shadow-sm">
+    <div class="max-w-lg rounded-md shadow-sm">
       <input
         :id="inputID"
         :name="inputID"
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import AdminFormItemWrapper from '@bit/advantagelearn.admin-component-library.admin-form-item-wrapper'
+import AdminFormItemWrapper from '@/components/AdminFormItemWrapper'
 
 export default {
   name: 'admin-form-input',
